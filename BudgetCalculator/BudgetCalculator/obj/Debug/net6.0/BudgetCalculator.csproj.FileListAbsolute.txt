@@ -1,0 +1,15 @@
+C:\Users\joshm\Documents\GitHub\BACS387\BudgetCalculator\BudgetCalculator\bin\Debug\net6.0\BudgetCalculator.exe
+C:\Users\joshm\Documents\GitHub\BACS387\BudgetCalculator\BudgetCalculator\bin\Debug\net6.0\BudgetCalculator.deps.json
+C:\Users\joshm\Documents\GitHub\BACS387\BudgetCalculator\BudgetCalculator\bin\Debug\net6.0\BudgetCalculator.runtimeconfig.json
+C:\Users\joshm\Documents\GitHub\BACS387\BudgetCalculator\BudgetCalculator\bin\Debug\net6.0\BudgetCalculator.dll
+C:\Users\joshm\Documents\GitHub\BACS387\BudgetCalculator\BudgetCalculator\bin\Debug\net6.0\BudgetCalculator.pdb
+C:\Users\joshm\Documents\GitHub\BACS387\BudgetCalculator\BudgetCalculator\obj\Debug\net6.0\BudgetCalculator.csproj.AssemblyReference.cache
+C:\Users\joshm\Documents\GitHub\BACS387\BudgetCalculator\BudgetCalculator\obj\Debug\net6.0\BudgetCalculator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joshm\Documents\GitHub\BACS387\BudgetCalculator\BudgetCalculator\obj\Debug\net6.0\BudgetCalculator.AssemblyInfoInputs.cache
+C:\Users\joshm\Documents\GitHub\BACS387\BudgetCalculator\BudgetCalculator\obj\Debug\net6.0\BudgetCalculator.AssemblyInfo.cs
+C:\Users\joshm\Documents\GitHub\BACS387\BudgetCalculator\BudgetCalculator\obj\Debug\net6.0\BudgetCalculator.csproj.CoreCompileInputs.cache
+C:\Users\joshm\Documents\GitHub\BACS387\BudgetCalculator\BudgetCalculator\obj\Debug\net6.0\BudgetCalculator.dll
+C:\Users\joshm\Documents\GitHub\BACS387\BudgetCalculator\BudgetCalculator\obj\Debug\net6.0\refint\BudgetCalculator.dll
+C:\Users\joshm\Documents\GitHub\BACS387\BudgetCalculator\BudgetCalculator\obj\Debug\net6.0\BudgetCalculator.pdb
+C:\Users\joshm\Documents\GitHub\BACS387\BudgetCalculator\BudgetCalculator\obj\Debug\net6.0\BudgetCalculator.genruntimeconfig.cache
+C:\Users\joshm\Documents\GitHub\BACS387\BudgetCalculator\BudgetCalculator\obj\Debug\net6.0\ref\BudgetCalculator.dll
