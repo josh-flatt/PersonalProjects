@@ -1,0 +1,17 @@
+C:\Users\joshm\Documents\GitHub\BACS387\SudokuSolver\SudokuSolver\bin\Debug\net6.0-windows\SudokuSolver.exe
+C:\Users\joshm\Documents\GitHub\BACS387\SudokuSolver\SudokuSolver\bin\Debug\net6.0-windows\SudokuSolver.deps.json
+C:\Users\joshm\Documents\GitHub\BACS387\SudokuSolver\SudokuSolver\bin\Debug\net6.0-windows\SudokuSolver.runtimeconfig.json
+C:\Users\joshm\Documents\GitHub\BACS387\SudokuSolver\SudokuSolver\bin\Debug\net6.0-windows\SudokuSolver.dll
+C:\Users\joshm\Documents\GitHub\BACS387\SudokuSolver\SudokuSolver\bin\Debug\net6.0-windows\SudokuSolver.pdb
+C:\Users\joshm\Documents\GitHub\BACS387\SudokuSolver\SudokuSolver\obj\Debug\net6.0-windows\SudokuSolver.csproj.AssemblyReference.cache
+C:\Users\joshm\Documents\GitHub\BACS387\SudokuSolver\SudokuSolver\obj\Debug\net6.0-windows\SudokuSolver.Form1.resources
+C:\Users\joshm\Documents\GitHub\BACS387\SudokuSolver\SudokuSolver\obj\Debug\net6.0-windows\SudokuSolver.csproj.GenerateResource.cache
+C:\Users\joshm\Documents\GitHub\BACS387\SudokuSolver\SudokuSolver\obj\Debug\net6.0-windows\SudokuSolver.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\joshm\Documents\GitHub\BACS387\SudokuSolver\SudokuSolver\obj\Debug\net6.0-windows\SudokuSolver.AssemblyInfoInputs.cache
+C:\Users\joshm\Documents\GitHub\BACS387\SudokuSolver\SudokuSolver\obj\Debug\net6.0-windows\SudokuSolver.AssemblyInfo.cs
+C:\Users\joshm\Documents\GitHub\BACS387\SudokuSolver\SudokuSolver\obj\Debug\net6.0-windows\SudokuSolver.csproj.CoreCompileInputs.cache
+C:\Users\joshm\Documents\GitHub\BACS387\SudokuSolver\SudokuSolver\obj\Debug\net6.0-windows\SudokuSolver.dll
+C:\Users\joshm\Documents\GitHub\BACS387\SudokuSolver\SudokuSolver\obj\Debug\net6.0-windows\refint\SudokuSolver.dll
+C:\Users\joshm\Documents\GitHub\BACS387\SudokuSolver\SudokuSolver\obj\Debug\net6.0-windows\SudokuSolver.pdb
+C:\Users\joshm\Documents\GitHub\BACS387\SudokuSolver\SudokuSolver\obj\Debug\net6.0-windows\SudokuSolver.genruntimeconfig.cache
+C:\Users\joshm\Documents\GitHub\BACS387\SudokuSolver\SudokuSolver\obj\Debug\net6.0-windows\ref\SudokuSolver.dll
