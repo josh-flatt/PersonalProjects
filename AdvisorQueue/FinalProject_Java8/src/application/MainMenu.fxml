@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainMenuController">
+   <center>
+      <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab onSelectionChanged="#initialize" text="Student">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                     	<TextField fx:id="studentFirstName" layoutX="248.0" layoutY="42.0" promptText="ex: John">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="studentLastName" layoutX="248.0" layoutY="142.0" promptText="Doe">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="studentEmail" layoutX="248.0" layoutY="240.0" promptText="you@example.com">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </TextField>
+                        <ComboBox fx:id="studentAdvisorSelection" editable="true" layoutX="248.0" layoutY="335.0" prefHeight="57.0" prefWidth="230.0" promptText="Select an Advisor" />
+                        <Button fx:id="studentSubmitButton" layoutX="248.0" layoutY="412.0" mnemonicParsing="false" onAction="#onStudentSubmitButtonClicked" text="Get in Line!">
+                           <font>
+                              <Font size="48.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="42.0" layoutY="54.0" text="First Name:">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="44.0" layoutY="154.0" text="Last Name:">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="86.0" layoutY="252.0" text="Email:">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="72.0" layoutY="339.0" text="Advisor:">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Adv CJ">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="advCJStartMeetingButton" layoutX="497.0" layoutY="51.0" mnemonicParsing="false" onAction="#onAdvCJStartMeetingButtonClicked" prefHeight="200.0" prefWidth="200.0" text="Start new meeting" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="advCJEndMeetingButton" layoutX="497.0" layoutY="259.0" mnemonicParsing="false" onAction="#onAdvCJEndMeetingButtonClicked" prefHeight="200.0" prefWidth="200.0" text="End meeting" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="advCJQueueCtLabel" layoutX="53.0" layoutY="80.0" prefHeight="58.0" prefWidth="260.0" text="Students in Queue: ">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="advCJRefreshButton" layoutX="87.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdvCJRefreshButtonClicked" text="Refresh">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Button>
+                        <Pane layoutX="53.0" layoutY="251.0" prefHeight="250.0" prefWidth="400.0" style="-fx-border-width: 1; -fx-border-color: black;">
+                           <children>
+                              <Label layoutX="14.0" layoutY="7.0" text="Current Meeting:" underline="true">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="37.0" layoutY="60.0" text="Student:" underline="true">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="110.0" text="Student email:" underline="true">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="34.0" layoutY="160.0" text="Duration:" underline="true">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="advCJMeetingStudentLabel" layoutX="147.0" layoutY="58.0" prefHeight="27.0" prefWidth="235.0">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="advCJMeetingStudentEmailLabel" layoutX="145.0" layoutY="108.0" prefHeight="20.0" prefWidth="241.0">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="advCJMeetingTimeLabel" layoutX="148.0" layoutY="163.0" prefHeight="27.0" prefWidth="237.0">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Adv Brendan">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="advBrendanStartMeetingButton" layoutX="497.0" layoutY="51.0" mnemonicParsing="false" onAction="#onAdvBrendanStartMeetingButtonClicked" prefHeight="200.0" prefWidth="200.0" text="Start new meeting" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="advBrendanEndMeetingButton" layoutX="497.0" layoutY="259.0" mnemonicParsing="false" onAction="#onAdvBrendanEndMeetingButtonClicked" prefHeight="200.0" prefWidth="200.0" text="End meeting" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="advBrendanQueueCtLabel" layoutX="53.0" layoutY="80.0" prefHeight="58.0" prefWidth="260.0" text="Students in Queue: ">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="advBrendanRefreshButton" layoutX="87.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdvBrendanRefreshButtonClicked" text="Refresh">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Button>
+                        <Pane layoutX="53.0" layoutY="251.0" prefHeight="250.0" prefWidth="400.0" style="-fx-border-width: 1; -fx-border-color: black;">
+                           <children>
+                              <Label layoutX="14.0" layoutY="7.0" text="Current Meeting:" underline="true">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="37.0" layoutY="60.0" text="Student:" underline="true">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="110.0" text="Student email:" underline="true">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="34.0" layoutY="160.0" text="Duration:" underline="true">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="advBrendanMeetingStudentLabel" layoutX="147.0" layoutY="58.0" prefHeight="27.0" prefWidth="235.0">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="advBrendanMeetingStudentEmailLabel" layoutX="145.0" layoutY="108.0" prefHeight="20.0" prefWidth="241.0">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="advBrendanMeetingTimeLabel" layoutX="148.0" layoutY="163.0" prefHeight="27.0" prefWidth="237.0">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Adv Alan">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="advAlanStartMeetingButton" layoutX="497.0" layoutY="51.0" mnemonicParsing="false" onAction="#onAdvAlanStartMeetingButtonClicked" prefHeight="200.0" prefWidth="200.0" text="Start new meeting" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="advAlanEndMeetingButton" layoutX="497.0" layoutY="259.0" mnemonicParsing="false" onAction="#onAdvAlanEndMeetingButtonClicked" prefHeight="200.0" prefWidth="200.0" text="End meeting" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="advAlanQueueCtLabel" layoutX="53.0" layoutY="80.0" prefHeight="58.0" prefWidth="260.0" text="Students in Queue: ">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="advAlanRefreshButton" layoutX="87.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdvAlanRefreshButtonClicked" text="Refresh">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Button>
+                        <Pane layoutX="53.0" layoutY="251.0" prefHeight="250.0" prefWidth="400.0" style="-fx-border-width: 1; -fx-border-color: black;">
+                           <children>
+                              <Label layoutX="14.0" layoutY="7.0" text="Current Meeting:" underline="true">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="37.0" layoutY="60.0" text="Student:" underline="true">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="110.0" text="Student email:" underline="true">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="34.0" layoutY="160.0" text="Duration:" underline="true">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="advAlanMeetingStudentLabel" layoutX="147.0" layoutY="58.0" prefHeight="27.0" prefWidth="235.0">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="advAlanMeetingStudentEmailLabel" layoutX="145.0" layoutY="108.0" prefHeight="20.0" prefWidth="241.0">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="advAlanMeetingTimeLabel" layoutX="148.0" layoutY="163.0" prefHeight="27.0" prefWidth="237.0">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Adv Ryan">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="advRyanStartMeetingButton" layoutX="497.0" layoutY="51.0" mnemonicParsing="false" onAction="#onAdvRyanStartMeetingButtonClicked" prefHeight="200.0" prefWidth="200.0" text="Start new meeting" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="advRyanEndMeetingButton" layoutX="497.0" layoutY="259.0" mnemonicParsing="false" onAction="#onAdvRyanEndMeetingButtonClicked" prefHeight="200.0" prefWidth="200.0" text="End meeting" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font size="36.0" />
+                           </font>
+                        </Button>
+                        <Label fx:id="advRyanQueueCtLabel" layoutX="53.0" layoutY="80.0" prefHeight="58.0" prefWidth="260.0" text="Students in Queue: ">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="advRyanRefreshButton" layoutX="87.0" layoutY="151.0" mnemonicParsing="false" onAction="#onAdvRyanRefreshButtonClicked" text="Refresh">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Button>
+                        <Pane layoutX="53.0" layoutY="251.0" prefHeight="250.0" prefWidth="400.0" style="-fx-border-width: 1; -fx-border-color: black;">
+                           <children>
+                              <Label layoutX="14.0" layoutY="7.0" text="Current Meeting:" underline="true">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="37.0" layoutY="60.0" text="Student:" underline="true">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="110.0" text="Student email:" underline="true">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="34.0" layoutY="160.0" text="Duration:" underline="true">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="advRyanMeetingStudentLabel" layoutX="147.0" layoutY="58.0" prefHeight="27.0" prefWidth="235.0">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="advRyanMeetingStudentEmailLabel" layoutX="145.0" layoutY="108.0" prefHeight="20.0" prefWidth="241.0">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="advRyanMeetingTimeLabel" layoutX="148.0" layoutY="163.0" prefHeight="27.0" prefWidth="237.0">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Meetings">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tableView" layoutX="19.0" layoutY="78.0" prefHeight="400.0" prefWidth="762.0">
+                          <columns>
+                            <TableColumn fx:id="meetingIDColumn" prefWidth="63.0" text="Meeting #" />
+                            <TableColumn fx:id="studentNameColumn" prefWidth="146.0" text="Student" />
+                              <TableColumn fx:id="studentEmailColumn" prefWidth="119.0" text="Student email" />
+                              <TableColumn fx:id="advisorFirstNameColumn" prefWidth="102.0" text="Advisor" />
+                              <TableColumn fx:id="meetingStartColumn" prefWidth="126.0" text="Start time" />
+                              <TableColumn fx:id="meetingEndColumn" prefWidth="118.0" text="End time" />
+                              <TableColumn fx:id="meetingDurationColumn" minWidth="0.0" prefWidth="86.0" text="Duration" />
+                          </columns>
+                        </TableView>
+                        <Label layoutX="321.0" layoutY="14.0" text="Meetings" underline="true">
+                           <font>
+                              <Font name="System Bold" size="36.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="meetingsRefreshButton" layoutX="675.0" layoutY="14.0" mnemonicParsing="false" onAction="#onMeetingsRefreshButtonClicked" prefHeight="38.0" prefWidth="106.0" text="Refresh Data">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="exportDataButton" layoutX="346.0" layoutY="503.0" mnemonicParsing="false" onAction="#onExportDataButtonPressed" prefHeight="41.0" prefWidth="109.0" text="Export Data">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+</BorderPane>
